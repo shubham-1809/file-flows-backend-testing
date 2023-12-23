@@ -10,7 +10,7 @@ const fileSchema = new Schema({
     receiver: { type: String, required: false },
     collegeName: { type: String, required: false },
     studentName: { type: String, required: false },
-    rollNumber: { type: int, required: false },
+    rollNumber: { type: number, required: false },
     branchName: { type: String, required: false },
     section: { type: int, required: false },
     projectType: { type: String, required: false },
