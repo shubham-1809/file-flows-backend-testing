@@ -114,16 +114,15 @@ module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, student
                                 <tr>
                                 <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi there,</p>
-                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>${emailFrom}</b> (${studentName}) from college <b style = "text-transform: uppercase;">${collegeName},</b> branch <b>${branch}${section}</b> has shared a <b style = "text-transform: capitalize;">${projectType}</b> Project file with you. Student enrollment number: <b>${rollNumber}.</b></p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">${emailFrom} (<b>${studentName}</b>) has shared a project file with you.</p>
     <table>
         <tbody>
             <tr>
                 <td>College Name</td>
-                <td style = "text-transform: uppercase;">${collegeName}</td>
-                
+                <td style = "text-transform: uppercase;">${collegeName}</td>               
             </tr>
             <tr>
-                <td>Enrollment Number</td>
+                <td>Student ID</td>
                 <td>${rollNumber}</td>              
             </tr>
             <tr>
@@ -132,7 +131,7 @@ module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, student
             </tr>
             <tr>
                 <td>Branch name</td>
-                <td>${branch}${section}</td>              
+                <td>${branch}-${section}</td>              
             </tr>
             <tr>
                 <td>Project Type</td>
