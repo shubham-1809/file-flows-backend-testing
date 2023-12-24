@@ -119,7 +119,7 @@ module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, student
         <tbody>
             <tr>
                 <td>College Name</td>
-                <td>${collegeName}</td>
+                <td style = "text-transform: uppercase;">${collegeName}</td>
                 
             </tr>
             <tr>
@@ -132,14 +132,15 @@ module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, student
             </tr>
             <tr>
                 <td>Branch name</td>
-                <td>${branch}${section}}</td>              
+                <td>${branch}${section}</td>              
             </tr>
             <tr>
                 <td>Project Type</td>
-                <td>${projectType}</td>              
+                <td style = "text-transform: capitalize;">${projectType}</td>              
             </tr>
         </tbody>
     </table>
+    <br>
                                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">${size} in total ・ Download Link Expires in ${expires}</p>
                                     <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
                                     <tbody>
