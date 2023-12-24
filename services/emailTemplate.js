@@ -1,4 +1,4 @@
-module.exports = ({emailFrom, downloadLink, size, expires, collegeName, studentName, rollNumber, branch, section, projectType}) => {
+module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, studentName, rollNumber, branch, section, projectType }) => {
     return `
         <!doctype html>
             <html>
@@ -115,6 +115,31 @@ module.exports = ({emailFrom, downloadLink, size, expires, collegeName, studentN
                                 <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi there,</p>
                                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>${emailFrom}</b> (${studentName}) from college <b style = "text-transform: uppercase;">${collegeName},</b> branch <b>${branch}${section}</b> has shared a <b style = "text-transform: capitalize;">${projectType}</b> Project file with you. Student enrollment number: <b>${rollNumber}.</b></p>
+    <table>
+        <tbody>
+            <tr>
+                <td>College Name</td>
+                <td>${collegeName}</td>
+                
+            </tr>
+            <tr>
+                <td>Enrollment Number</td>
+                <td>${rollNumber}</td>              
+            </tr>
+            <tr>
+                <td>Student name</td>
+                <td>${studentName}</td>              
+            </tr>
+            <tr>
+                <td>Branch name</td>
+                <td>${branch}${section}}</td>              
+            </tr>
+            <tr>
+                <td>Project Type</td>
+                <td>${projectType}</td>              
+            </tr>
+        </tbody>
+    </table>
                                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">${size} in total ・ Download Link Expires in ${expires}</p>
                                     <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
                                     <tbody>
