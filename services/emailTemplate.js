@@ -135,7 +135,7 @@ module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, student
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Project Type</td>
-                <td style = "text-transform: capitalize; style="border: 1px solid #ddd; padding: 8px; text-align: left;">${projectType}</td>              
+                <td style = "text-transform: capitalize; border: 1px solid #ddd; padding: 8px; text-align: left;">${projectType}</td>              
             </tr>
         </tbody>
     </table>
