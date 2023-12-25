@@ -114,28 +114,28 @@ module.exports = ({ emailFrom, downloadLink, size, expires, collegeName, student
                                 <tr>
                                 <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi there,</p>
-                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">${emailFrom} (<b>${studentName}</b>) has shared a project file with you.</p>
-    <table>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">${emailFrom} (<b>${studentName}</b>) has shared a project file with you.Below are the details:</p>
+    <table style="border-collapse: collapse; width: 100%;">
         <tbody>
             <tr>
-                <td>College Name</td>
-                <td style = "text-transform: uppercase;">${collegeName}</td>               
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">College Name</td>
+                <td style = "text-transform: uppercase; border: 1px solid #ddd; padding: 8px; text-align: left;">${collegeName}</td>               
             </tr>
             <tr>
-                <td>Student ID</td>
-                <td>${rollNumber}</td>              
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Student ID</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${rollNumber}</td>              
             </tr>
             <tr>
-                <td>Student name</td>
-                <td>${studentName}</td>              
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Student name</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${studentName}</td>              
             </tr>
             <tr>
-                <td>Branch name</td>
-                <td>${branch}-${section}</td>              
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Branch name</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${branch}-${section}</td>              
             </tr>
             <tr>
-                <td>Project Type</td>
-                <td style = "text-transform: capitalize;">${projectType}</td>              
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Project Type</td>
+                <td style = "text-transform: capitalize; style="border: 1px solid #ddd; padding: 8px; text-align: left;">${projectType}</td>              
             </tr>
         </tbody>
     </table>
